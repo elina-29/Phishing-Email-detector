@@ -1,0 +1,41 @@
+Return-Path: <no-reply@paypal-security.com>
+Received: from suspicious-ip.example.com (unknown [203.0.113.12])
+    by mail.example.com (Postfix) with ESMTP id 123456789
+    for <your-email@example.com>; Tue, 25 Jun 2024 12:34:56 +0000 (UTC)
+From: PayPal Security <no-reply@paypal-security.com>
+To: <your-email@example.com>
+Subject: Urgent Action Required – Account Suspended
+Date: Tue, 25 Jun 2024 12:34:56 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary123"
+
+--boundary123
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Customer,
+
+We noticed unusual activity in your PayPal account. For your protection, we have temporarily limited access. 
+
+To restore full access, please verify your information at the following link:
+
+https://paypal-security-verify.com/login
+
+Failure to do so within 24 hours will result in permanent suspension of your account.
+
+Sincerely,  
+PayPal Account Review Team
+
+--boundary123
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+  <body>
+    <p>Dear Customer,</p>
+    <p>We noticed unusual activity in your PayPal account. For your protection, we have temporarily limited access.</p>
+    <p>To restore full access, please <a href="https://paypal-security-verify.com/login">click here</a> to verify your information.</p>
+    <p style="color:red;"><strong>Failure to do so within 24 hours will result in permanent suspension of your account.</strong></p>
+    <p>Sincerely,<br>PayPal Account Review Team</p>
+  </body>
+</html>
+
+--boundary123--
