@@ -1,0 +1,32 @@
+From: IT Admin <security-update@support.microsoft.com>
+To: you@example.com
+Subject: Action Required: Security Update for Your Account
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+  <body>
+    <p>Dear User,</p>
+
+    <p>As part of our regular security updates, we require all users to review their account access.</p>
+
+    <ul>
+      <li>
+        <a href="https://login.microsoftonline.com/">Verify via Microsoft portal</a>
+      </li>
+      <li>
+        <a href="http://update-security-review.net/login">Urgent review link</a> <!-- Suspicious -->
+      </li>
+      <li>
+        <a href="https://github.com/microsoft/security">Security documentation</a>
+      </li>
+      <li>
+        <a href="http://security-alert-support.net/account">Secondary validation</a> <!-- Suspicious -->
+      </li>
+    </ul>
+
+    <p>If you don’t take action within 24 hours, your account may be temporarily locked for your protection.</p>
+
+    <p>Regards,<br>Microsoft Security Team</p>
+  </body>
+</html>

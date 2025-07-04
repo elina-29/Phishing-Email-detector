@@ -1,0 +1,25 @@
+From: "GitHub Digest" <noreply@github.com>
+To: you@example.com
+Subject: Your Weekly GitHub Summary
+Date: Thu, 4 Jul 2025 16:00:00 +0530
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="newsletter-sep"
+
+--newsletter-sep
+Content-Type: text/plain; charset="UTF-8"
+
+Hi there,
+
+Here's a summary of your GitHub activity this week:
+
+- 2 new pull requests opened
+- 5 issues commented on
+- 3 repositories starred
+
+Explore more at:
+https://github.com/dashboard
+
+Happy coding!  
+– The GitHub Team
+
+--newsletter-sep--
