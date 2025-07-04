@@ -80,6 +80,3 @@ if uploaded_file:
 
     st.markdown(f"### {verdict}")
 
-
-#  streamlit run app.py
-#  streamlit run "D:\VS Code\Python\phishing-email-detector\app.py"
