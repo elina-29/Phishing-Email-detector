@@ -58,10 +58,70 @@ Designed with a SOC-style dashboard UI for interactive threat analysis.
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ```bash
 git clone https://github.com/your-username/phishing-email-detector.git
 cd phishing-email-detector
 pip install -r requirements.txt
 streamlit run app.py
+
+```
+---
+
+##  Risk Scoring Model
+
+The engine calculates a composite risk score (0–10) using:
+
+- URL malicious weight  
+- Behavioural NLP weight  
+- Attachment risk flags  
+- SPF authentication status  
+- Identity spoofing indicators  
+
+Each detection vector contributes transparently to the final verdict, enabling explainable security analysis.
+
+---
+
+##  Generated Output
+
+The engine produces a structured threat analysis including:
+
+- Executive summary  
+- Risk score & confidence level  
+- Key detection reasons  
+- URL reputation breakdown  
+- Behavioural indicator weights  
+- Attachment security status  
+- Authentication validation results  
+
+Reports can be exported as:
+
+- Markdown (.md)  
+- JSON (.json)  
+
+---
+
+##  Security Philosophy
+
+- Multi-vector detection (not keyword-only)  
+- Explainable scoring model  
+- SOC-oriented UI design  
+- Transparent risk attribution  
+- Defensive cybersecurity research focus  
+
+---
+
+##  Future Improvements
+
+- DKIM & DMARC validation  
+- WHOIS domain age scoring  
+- Domain similarity detection (typosquatting analysis)  
+- Machine learning classification layer  
+- Real-time threat feed automation  
+
+---
+
+## ⚠ Disclaimer
+
+This project is intended for educational and defensive cybersecurity research purposes only. Always analyze suspicious files in controlled and secure environments.
