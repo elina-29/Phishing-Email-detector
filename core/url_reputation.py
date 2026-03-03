@@ -6,10 +6,13 @@ import streamlit as st
 
 load_dotenv()
 
+VT_URL = "https://www.virustotal.com/api/v3/urls"
+
 API_KEY = os.getenv("VT_API_KEY") or st.secrets.get("VT_API_KEY")
 
 if not API_KEY:
     raise ValueError("VirusTotal API key not configured.")
+
 
 def check_url_virustotal(url):
     try:
@@ -43,4 +46,5 @@ def check_url_virustotal(url):
 
     except Exception as e:
         return f"❌ Exception occurred: {e}", None
+
 
