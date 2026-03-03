@@ -1,6 +1,8 @@
 #  Phishing Email Detector
 A multi-vector phishing detection platform that analyzes emails using authentication validation, URL threat intelligence, behavioural NLP heuristics, and attachment risk scoring — producing an explainable composite threat verdict.
 
+🚀 Live Demo: https://phishing-email-detector01.streamlit.app/
+
 ---
 
 ## Overview
