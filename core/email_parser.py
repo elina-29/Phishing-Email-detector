@@ -3,10 +3,12 @@ from email import policy
 from email.parser import BytesParser
 import re
 
+
 def extract_email_content(file_path):
     try:
         with open(file_path, 'rb') as f:
             msg = BytesParser(policy=policy.default).parse(f)
+
 
         subject = msg['subject']
         from_ = email.utils.getaddresses([msg['from']])
@@ -21,17 +23,21 @@ def extract_email_content(file_path):
         else:
             text = msg.get_payload(decode=True).decode(errors='ignore')
 
+
         return subject, from_, text, msg
+
 
     except Exception as e:
         print(f"❌ Failed to parse email: {e}")
         return None, None, None, None
+
 
 def extract_urls(text):
     if not text:
         return []
     url_regex = r'https?://[^\s<>"]+|www\.[^\s<>"]+'
     return re.findall(url_regex, text)
+
 
 def extract_attachments(msg):
     attachments = []
@@ -46,3 +52,4 @@ def extract_attachments(msg):
                 "size": size
             })
     return attachments
+
