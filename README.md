@@ -1,59 +1,67 @@
-# Phishing-Email-detector
-
-
-This is a Streamlit-based tool that scans `.eml` email files to detect phishing attempts using:
-
-- ✅ Sender verification (SPF records)
-- ✅ URL analysis (VirusTotal, WHOIS)
-- ✅ Attachment scanning
-- ✅ Intelligent final verdict scoring
+#  Phishing Email Detector
+A multi-vector phishing detection platform that analyzes emails using authentication validation, URL threat intelligence, behavioural NLP heuristics, and attachment risk scoring — producing an explainable composite threat verdict.
 
 ---
 
-##  Features
+## Overview
 
-- Upload `.eml` email files via web interface
-- Detect malicious or suspicious links using VirusTotal API
-- Identify fake sender domains with SPF record checks
-- Flag risky attachments like `.exe`, `.js`, etc.
-- Display a detailed final verdict with risk scores
+This project simulates an enterprise-style email security triage workflow by analyzing emails across multiple attack vectors:
+
+- Sender authentication validation (SPF)
+- URL reputation scoring (VirusTotal + threat intelligence logic)
+- Attachment risk heuristics
+- Behavioural & social engineering NLP indicators
+- Composite risk scoring (0–10 scale)
+- Explainable attack vector breakdown
+- Exportable forensic reports (Markdown + JSON)
+
+Designed with a SOC-style dashboard UI for interactive threat analysis.
 
 ---
 
+##  Detection Vectors
 
-##  Installation
+| Vector | Description |
+|--------|------------|
+| Sender Authentication | SPF record validation against DNS |
+| URL Reputation | Flagging malicious/suspicious links via threat intelligence |
+| Attachment Analysis | Risky file extension & payload heuristics |
+| Behavioural NLP | Urgency, manipulation & credential-harvesting pattern detection |
+| Composite Scoring | Weighted risk aggregation engine (0–10 scale) |
 
-### 1. Clone the repository
+---
 
+##  Key Features
+
+- Manual email input (`.eml` files)
+- Animated multi-stage scan workflow
+- Real-time risk gauge visualization (Plotly)
+- Attack vector score breakdown
+- Session-based scan history
+- Downloadable forensic reports (.md / .json)
+- Structured verdict categories:
+  - Highly Suspicious
+  - Moderately Suspicious
+  - Negligible Risk
+
+---
+
+##  Tech Stack
+
+- Python
+- Streamlit
+- Plotly
+- DNS (SPF lookup)
+- VirusTotal API (URL scanning)
+- WHOIS analysis
+- Custom heuristic NLP scoring
+
+---
+
+## ⚙️ Installation
+
+```bash
 git clone https://github.com/your-username/phishing-email-detector.git
 cd phishing-email-detector
-
-### 2. Create and Activate Virtual Environment (Optional but Recommended)
-
-python -m venv venv
-source venv/bin/activate     # On Linux/macOS
-venv\Scripts\activate        # On Windows
-
-### 3. Install Dependencies
-
 pip install -r requirements.txt
-
-### 4. Set Up Environment Variables
-
-Create a .env file in the project root and add your VirusTotal API key:
-VT_API_KEY=your_virustotal_api_key_here
-
-
-### Run the App:
-
 streamlit run app.py
-
-Open the browser at: http://localhost:8501
-
-# Sample Test Email
-You can test using sample .eml files (create your own or sanitize real ones). Keep them in a folder like sample_emails/.
-
-# Disclaimer
-This project is for educational purposes only. Always handle real user data and suspicious files carefully and in secure environments.
-
-
